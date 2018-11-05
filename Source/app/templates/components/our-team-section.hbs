@@ -1,0 +1,35 @@
+<div id="our-team" class="our__team">
+    <div class="container">
+        <div class="row">
+            <div class="our__team--wrapper">
+                <h1 class="our__team--header">{{ourTeam.title}}</h1>
+                <h4  class="our__team--text">{{ourTeam.subtitle}}</h4>
+                <div class="our__team--container">
+                    {{#each ourTeam.member as |team|}}
+                        <div class="our__team--member col-lg-3 col-md-3 col-xs-12 col-sm-6">
+                            <img  class="our__team--member-img" src={{team.path}}>
+                            <h3>{{team.name}}</h3>
+                            <h4>{{team.designation}}</h4>
+                            <p>{{team.about}}</p>
+                            <div class="our__team--social">
+                                <a class="facebook" href="#"></a>
+                                <a class="twitter" href="#"></a>
+                                <a class="linkedin" href="#"></a>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="partners">
+    <div class="container">
+        <div class="partners__wrapper">
+            {{#each ourTeam.logo as |logo|}}
+                <img src={{logo.path}} class={{logo.name}}/>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="redefining__web">
+    <div class="container">
+        <div class="row">
+            <div class="redefining__web--wrapper">
+                <h2 id="redefining-web" class="redefining__web--wrapper-header hidden-sm hidden-md hidden-lg">{{redefiningWeb.title}}</h2>
+                <div class="col-sm-6 col-xs-12">
+                    <img src={{redefiningWeb.path}} class="img-responsive" alt="" title=""/>
+                </div>
+                <div class="col-sm-6 col-xs-12 redefining__web--wrapper-body">
+                    <h2 id="redefining-web" class="header hidden-xs">{{redefiningWeb.title}}</h2>
+                    <p>{{redefiningWeb.content}}</p>
+                    <p>{{redefiningWeb.content}}</p>
+                    <a {{action "toggleModal"}} class="btn btn-default btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#if isShowLearnMoreModal}}
+    {{#modal-dialog targetAttachment="center"}}
+        {{learn-more-modal toggleModal='toggleModal'}}
+    {{/modal-dialog}}
+{{/if}}

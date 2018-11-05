@@ -1,0 +1,25 @@
+{{#bs-navbar as |navbar|}}
+    <div class="navbar-header">
+        {{navbar.toggle}}
+        <a class="navbar-brand" href="#">SomeCompany</a>
+    </div>
+    {{#navbar.content}}
+        {{#navbar.nav as |nav|}}
+            {{#nav.item}}
+                {{#nav.link-to "index"}}<a {{action "toggleModal"}}>Pricing</a> {{/nav.link-to}}
+            {{/nav.item}}
+            {{#nav.item}}
+                <a href="#our-team">About</a>
+            {{/nav.item}}
+            {{#nav.item}}
+                <a href="#contact-section">Contact</a>
+            {{/nav.item}}
+        {{/navbar.nav}}
+    {{/navbar.content}}
+{{/bs-navbar}}
+
+{{#if isShowPriceModal}}
+    {{#modal-dialog targetAttachment="center" translucentOverlay=true}}
+        {{pricing-modal toggleModal='toggleModal'}}
+    {{/modal-dialog}}
+{{/if}}

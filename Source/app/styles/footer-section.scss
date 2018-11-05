@@ -1,0 +1,30 @@
+.footer {
+    background: rgb(31, 31, 31);
+    padding-top: 30px;
+
+    &__components {
+        height: 150px;
+        h3 {
+            color:#fff;
+            @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            color:#999;
+        }
+    }
+
+    hr {
+        border-top: 1px solid #999;
+        clear: both;
+        margin: 20px 10px;
+    }
+
+    .copyright{
+        padding: 0px 10px 20px 10px;
+        color: #999;
+    }
+}

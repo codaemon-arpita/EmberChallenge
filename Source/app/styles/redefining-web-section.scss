@@ -1,0 +1,38 @@
+.redefining__web {
+    background: #5c1bb7;
+    padding-top: 60px;
+    color: #fff;
+
+    &--wrapper {
+        &-header {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        &-body {
+            text-align: left;
+            font-size: 16px;
+            @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+                text-align: center;
+            }
+            
+            p {
+                margin-bottom: 10px; 
+            }
+            .btn {
+                background-color: transparent;
+                color: #fff;
+                font-size: 22px;
+                border: 2px solid;
+                border-radius: 10px;
+                padding: 8px 10px;
+                width: 150px;
+                margin: 20px auto 60px auto;
+                &:hover{
+                    background:#400d88;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}

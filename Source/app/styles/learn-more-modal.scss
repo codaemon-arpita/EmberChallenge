@@ -1,0 +1,61 @@
+.learn__more {
+    &--dialog {
+        position: fixed;
+        background: #fff none repeat scroll 0 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #222;
+        width: 40%;
+        height: auto;
+        left: 30%;
+        z-index: 1;
+        padding: 20px;
+        font-size: 18px;
+
+        .close {
+            color: black;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+            padding-right: 28px;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        &-header {
+            h2 {
+                padding-bottom: 10px;
+                color: #5c1bb7;
+            }
+        }
+
+        &-content {
+            .learn-more-img {
+                margin-bottom: 30px;
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+            width: 89%;
+            left: 6%;
+            top: 10%;
+            height: 480px;
+            overflow: scroll;
+            padding: 20px;
+        }
+
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            width: 70%;
+            height: 550px;
+            left: 15%;
+            top: 10%;
+            overflow: scroll;
+        }
+    }
+}

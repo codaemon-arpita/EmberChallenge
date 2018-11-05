@@ -1,0 +1,19 @@
+<div class="services">
+    <div class="container">
+        <div class="row">
+            <div class="services__wrapper">
+                <h1 class="services__wrapper--heading">{{services.title}}</h1>
+                <h4  class="services__wrapper--text">{{services.subtitle}}</h4>
+                <div class="services__wrapper--container">
+                    {{#each services.names as |service|}}
+                        <div class="services__wrapper--container-item col-sm-4 col-md-4 col-lg-4">
+                            <img src={{service.path}}>
+                            <h3>{{service.name}}</h3>
+                            <p>{{service.description}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

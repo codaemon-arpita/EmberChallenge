@@ -1,0 +1,23 @@
+<div class="hero__header">
+    <div class="hero__header--inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
+                    <h1>{{heroHeader.title}}</h1>
+                    <p>
+                        {{heroHeader.content}}
+                    </p>
+                    <div class="text-center">
+                        <input type="button" class="btn btn-primary" value="Learn more &raquo;" {{action "toggleModal"}}/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#if isShowLearnMoreModal}}
+    {{#modal-dialog targetAttachment="center"}}
+        {{learn-more-modal toggleModal='toggleModal'}}
+    {{/modal-dialog}}
+{{/if}}

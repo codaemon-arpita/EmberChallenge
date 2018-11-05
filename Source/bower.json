@@ -1,0 +1,20 @@
+{
+  "name": "ember-challenge",
+  "description": "Small description for ember-challenge goes here",
+  "main": "",
+  "authors": [
+    "Arpita Singh <arpita.singh@codaemonsoftwares.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/codaemon-arpita/Ember-challenge",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-validation": "^1.18.0"
+  }
+}
